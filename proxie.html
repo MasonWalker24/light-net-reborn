@@ -14,9 +14,53 @@
 <input type="text" placeholder="Enter URL" id="url" name="url" class="url"/>&nbsp;
 <input type="submit" value="GO" class="submit"/>
 </form>
+<form action="" method="get" id="alloy">
+<input type="text" placeholder="Enter URL" id="url" name="url" class="url"/>&nbsp;
+<input type="submit" value="GO" class="submit"/>
+</form>
 </body>
 <script>
 function $(id) { return document.getElementById(id); } $('web-search-box').onsubmit = function() { var url = $('url').value; 
 window.location.href = `http://ironunblocker.herokuapp.com/proxy/https://www.${url}`; return false; }; window.onload = function() { $('url').focus(); }
 </script>
+<script>
+var purl = (()=>{
+        /*
+        // this will give the root domain, https://www.domain.tld/place => domain.tld
+        */
+        
+        var tmp = location.hostname,
+            tmp2 = location.hostname.split('.');
+        
+        if(tmp2.length == 3){
+            tmp = tmp2[1] + '.' + tmp2[2]
+        }
+        
+        return tmp
+    })(),
+    addproto = url =>{
+        /* this will do domain.tld/place => https://domain.tld/place
+        // if needed
+        */
+        
+        if (!/^(?:f|ht)tps?\:\/\//.test(url))url = "https://" + url;
+        return url;
+    };
+
+document.querySelector('#alloy').addEventListener('submit', event =>{
+    event.preventDefault();
+    
+    // add the https:// to domain if it is needed
+    var url = addproto(document.querySelector('#url').value);
+    
+    document.cookie = 'oldsmobile=2; expires=' + (Date.now() + 259200) + '; sameSite=lax; domain=.' + purl + '; path=/; secure;';
+    
+    // change the URL over to the unblocked page
+    
+    location.href = 'https://c.' + purl + '/alloy/?url=' + btoa(url);
+});
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('#url').focus();
+});        </script>
 </html>
