@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Light Net</title>
+<link rel="stylesheet" href="primary.css">
+</head>
+<body>
+<div class="navbar">
+<button class="mainbutton"><a href="index.html" class="navlogo"><h1>Light-Net</h1></a></button>
+<button class="navbutton"><a href="proxy.html" class="navlogo"><h2>Surf Freely</h2></a></button>
+</div>
+<center><h1 class="indexheader">Proxy Servers</h1></center>
+<center><h2 class="indexcontent">Secure proxies to evade censorship and use sights as if you were actually on them</h2></center>
+<h2 class="proxytype" id="proxytype"></h2>
+<form action="" method="get" id="web-search-box">
+<input type="text" placeholder="Enter URL" id="url" name="url" class="url"/>&nbsp;
+<input type="submit" value="Go" class="submit">
+</form>
+<button class="proxybutton" onclick="changetonode()">Node</button>
+<button class="proxybutton" onclick="changetoalloy()">Alloy</button>
+</body>
+<script>
+var proxytype = "None";
+setInterval(start, 1);
+function $(id) { return document.getElementById(id); } 
+function start()
+{
+var writeproxy = "Proxy Type = " + proxytype;
+document.getElementById("proxytype").innerHTML = writeproxy;
+if(proxytype == "Node")
+{
+$('web-search-box').onsubmit = function() { var url = $('url').value; 
+window.location.href = `http://ironunblocker.herokuapp.com/proxy/https://www.${url}`; return false; }; window.onload = function() { $('url').focus(); }
+}
+if(proxytype == "Alloy")
+{
+$('web-search-box').onsubmit = function() { var url = $('url').value; 
+window.location.href = `https://ironunblock2.herokuapp.com/fetch/aHR0cHM6Lw==/${url}`; return false; }; window.onload = function() { $('url').focus(); }
+}
+}
+function changetoalloy()
+{
+proxytype = "Alloy";
+}
+function changetonode()
+{
+proxytype = "Node";
+}
+</script>
+</html>
