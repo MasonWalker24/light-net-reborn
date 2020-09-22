@@ -28,6 +28,9 @@ border: none;
 left: 70%;
 bottom: 5%;
 transition: .2s;
+color: white;
+text-decoration: none;
+  font-size: 1vw;
 }
 .navbutton:hover
 {
@@ -36,9 +39,11 @@ transition: .2s;
 }
 .mainbutton
 {
-font-size: 5px;
+color: white;
+text-decoration: none;
 background: transparent;
 border: none;
+  font-size: 1vw;
 }
 .url
 {
@@ -184,6 +189,9 @@ border: none;
 left: 60%;
 bottom: 5%;
 transition: .2s;
+color: white;
+text-decoration: none;
+  font-size: 1.8vw;
 }
 .navbutton:hover
 {
@@ -192,9 +200,11 @@ transition: .2s;
 }
 .mainbutton
 {
-font-size: 5px;
+color: white;
+text-decoration: none;
 background: transparent;
 border: none;
+  font-size: 1.8vw;
 }
 .url
 {
