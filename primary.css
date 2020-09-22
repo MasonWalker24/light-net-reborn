@@ -4,6 +4,7 @@ overflow: hidden;
 background-color: black;
 background-image: url("background9.jpeg");
 }
+@media only screen and (min-width: 1000px) {
 .navbar
 {
 position: relative;
@@ -35,6 +36,7 @@ transition: .2s;
 }
 .mainbutton
 {
+font-size: 5px;
 background: transparent;
 border: none;
 }
@@ -108,7 +110,6 @@ background-color: white;
 color: black;
 transition: .2s;
 }
-
 .indexbutton2
 {
 position: relative;
@@ -123,25 +124,6 @@ left: 2%;
 margin-top: 1%;
 }
 .indexbutton2:hover
-{
-background-color: white;
-color: black;
-transition: .2s;
-}
-.indexbutton3
-{
-position: relative;
-background: transparent;
-border: 1px solid white;
-color: white;
-font-size: 1.5vw;
-transition: .2s;
-padding: .8%;
-width: 10%;
-left: 2%;
-margin-top: 1%;
-}
-.indexbutton3:hover
 {
 background-color: white;
 color: black;
@@ -163,10 +145,10 @@ background: none;
 border: 1px solid white;
 color: white;
 font-size: 1.2vw;
-left: 41%;
+left: 44%;
 padding: .4%;
-width: 7.5%;
-margin-top: .5%;
+width: 5%;
+margin-top: .3%;
 transition: .2s;
 }
 .proxybutton:hover
@@ -175,4 +157,159 @@ background-color: white;
 color: black;
 transition: .2s;
 cursor: pointer;
+}
+}
+@media only screen and (max-width: 600px) 
+{
+.navbar
+{
+position: relative;
+height: 6%;
+width: 100%;
+background-color: black;
+}
+.navlogo
+{
+position: relative;
+width: 1%;
+color: white;
+text-decoration: none;
+font-size: 1.8vw;
+}
+.navbutton
+{
+position: relative;
+background: transparent;
+border: none;
+left: 60%;
+bottom: 5%;
+transition: .2s;
+}
+.navbutton:hover
+{
+background-color: #2E2E2E;
+transition: .2s;
+}
+.mainbutton
+{
+font-size: 5px;
+background: transparent;
+border: none;
+}
+.url
+{
+position: relative;
+left: 25%;
+top: 0;
+height: 5%;
+width: 45%;
+margin-top: 3%;
+z-index: 2;
+}
+.submit
+{
+position: relative;
+left: 25%;
+height: 5%;
+width: 10%;
+background: transparent;
+border: 1px solid white;
+color: white;
+z-index: 2;
+transition: .2s;
+}
+.submit:hover
+{
+background-color: white;
+color: black;
+transition: .2s;
+cursor: pointer;
+}
+.indexheader
+{
+padding-top: 10%;
+font-size: 6.5vw;
+color: white;
+text-decoration: underline;
+font-family: 'Arvo', serif;
+}
+.indexcontent
+{
+font-size: 4vw;
+color: white;
+font-family: 'Arvo', serif;
+}
+.logo
+{
+position: relative;
+width: 25%;
+left: 42%;
+top: 0;
+margin-top: 2%;
+}
+.indexbutton
+{
+position: relative;
+background: transparent;
+border: 1px solid white;
+color: white;
+font-size: 4.5vw;
+transition: .2s;
+padding: 4%;
+width: 70%;
+margin-top: 5%;
+}
+.indexbutton:hover
+{
+background-color: white;
+color: black;
+transition: .2s;
+}
+
+.indexbutton2
+{
+position: relative;
+background: transparent;
+border: 1px solid white;
+color: white;
+font-size: 4.5vw;
+transition: .2s;
+padding: 4%;
+width: 70%;
+margin-top: 5%;
+}
+.indexbutton2:hover
+{
+background-color: white;
+color: black;
+transition: .2s;
+}
+.proxytype
+{
+position: relative;
+left: 30%;
+top: 0;
+margin-top: 3%;
+color: white;
+font-family: 'Arvo', serif;
+}
+.proxybutton
+{
+position: relative;
+background: none;
+border: 1px solid white;
+color: white;
+font-size: 7vw;
+left: 23%;
+width: 60%;
+margin-top: 3%;
+transition: .2s;
+}
+.proxybutton:hover
+{
+background-color: white;
+color: black;
+transition: .2s;
+cursor: pointer;
+}
 }
