@@ -2,11 +2,11 @@
 <head>
 <title>Light Net</title>
 <link rel="stylesheet" href="primary.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="navbar">
-<button class="mainbutton"><a href="index.html" class="navlogo"><h1>𝙇𝙞𝙜𝙝𝙩 𝙉𝙚𝙩</h1></a></button>
+<button class="mainbutton"><a href="index.html" class="navlogo"><h1>Light-Net</h1></a></button>
 <button class="navbutton"><a href="proxy.html" class="navlogo"><h2>Surf Freely</h2></a></button>
 </div>
 <center><h1 class="indexheader">Proxy Servers</h1></center>
@@ -17,7 +17,7 @@
 <input type="submit" value="Go" class="submit">
 </form>
 <button class="proxybutton" onclick="changetonode()">Node</button>
-<button class="proxybutton" onclick="changetoalloy()">Alloy</button>
+<button onclick="changetoalloy()" class="proxybutton">Alloy</button>
 </body>
 <script>
 var proxytype = "None";
@@ -47,8 +47,4 @@ function changetonode()
 proxytype = "Node";
 }
 </script>
-  <script src="backjs/three.r119.min.js"></script>
-<script src="backjs/vanta.fog.min.js"></script>
-<script src="backjs/fogconfig.js"></script>
-
 </html>
