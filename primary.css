@@ -5,6 +5,12 @@ background-color: black;
 background-image: url("background9.jpeg");
 }
 @media only screen and (min-width: 1000px) {
+  body
+{
+overflow: hidden;
+background-color: black;
+background-image: url("background9.jpeg");
+}
 .navbar
 {
 position: relative;
@@ -166,6 +172,12 @@ cursor: pointer;
 }
 @media only screen and (max-width: 980px) 
 {
+  body
+{
+overflow: hidden;
+background-color: black;
+background-image: url("background10.jpg");
+}
 .navbar
 {
 position: relative;
