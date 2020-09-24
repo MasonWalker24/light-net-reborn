@@ -13,10 +13,12 @@ background-image: url("background9.jpeg");
 }
 .navbar
 {
-position: relative;
+position: fixed;
 height: 10%;
 width: 100%;
 background-color: black;
+top: 0;
+left: 0;
 }
 .navlogo
 {
@@ -82,7 +84,7 @@ cursor: pointer;
 }
 .indexheader
 {
-padding-top: 10%;
+padding-top: 15%;
 font-size: 3vw;
 color: white;
 text-decoration: underline;
@@ -180,10 +182,12 @@ background-image: url("background10.jpg");
 }
 .navbar
 {
-position: relative;
+position: fixed;
 height: 6%;
 width: 100%;
 background-color: black;
+  top: 0;
+  left: 0;
 }
 .navlogo
 {
@@ -249,7 +253,7 @@ cursor: pointer;
 }
 .indexheader
 {
-padding-top: 10%;
+padding-top: 15%;
 font-size: 6.5vw;
 color: white;
 text-decoration: underline;
