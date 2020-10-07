@@ -89,7 +89,6 @@ padding-top: 15%;
 font-size: 3vw;
 color: white;
 text-decoration: underline;
-  font-family: 'Carrois Gothic SC', sans-serif;
 }
 .indexcontent
 {
@@ -341,4 +340,4 @@ transition: .2s;
 cursor: pointer;
 }
 }
-;
+
