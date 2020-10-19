@@ -165,7 +165,7 @@ padding: .4%;
 width: 5%;
 margin-top: .3%;
 transition: .2s;
-  border-radius: .1%;
+  border-radius: 10%;
 }
 .proxybutton:hover
 {
