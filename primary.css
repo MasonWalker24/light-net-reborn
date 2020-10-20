@@ -99,6 +99,22 @@ font-size: 1.5vw;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 }
+  .gameheader
+  {
+   position: relative;
+    padding-top: 8%;
+    font-size: 2.3vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: bold;
+  }
+  .gamelink
+  {
+   text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 .logo
 {
 position: relative;
