@@ -41,6 +41,15 @@ transition: .2s;
 color: white;
 text-decoration: none;
   font-size: 1vw;
+  margin-left: 1%;
+}
+  .buttontext
+{
+position: relative;
+width: 1%;
+color: white;
+text-decoration: none;
+font-size: 1vw;
 }
 .navbutton:hover
 {
