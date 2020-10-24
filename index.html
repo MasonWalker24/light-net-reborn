@@ -4,6 +4,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Arvo&amp;display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+document.onkeydown=(function(e){
+e.preventDefault();
+if (e.which==17)cip=true;
+if (e.which==77 && cip){
+var c=document.getElementById('cloak');
+if(c.style.display=='none'){c.style.display='block'} else
+{c.style.display='none'}
+}})
+
+  }
+  </script>
   <iframe src="https://www.google.com/docs/about/" class="cloak" id="cloak">
 <div class="navbar">
 <button class="mainbutton"><a href="/" class="navlogo"><h1>Light-Net</h1></a></button>
@@ -19,18 +31,6 @@
 <a href="porta.txt"><button class="indexbutton2">Porta Proxy</button></a>
   <br><br><br><br><br><br>
 </center>
-    <script>
-document.onkeydown=(function(e){
-e.preventDefault();
-if (e.which==17)cip=true;
-if (e.which==77 && cip){
-var c=document.getElementById('cloak');
-if(c.style.display=='none'){c.style.display='block'} else
-{c.style.display='none'}
-}})
-
-  }
-  </script>
     </body>
   
 </html>
