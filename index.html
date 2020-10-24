@@ -10,8 +10,24 @@ e.preventDefault();
 if (e.which==17)cip=true;
 if (e.which==77 && cip){
 var c=document.getElementById('cloak');
-if(c.style.display=='none'){c.style.display='block'} else
-{c.style.display='none'}
+if(c.style.display=='none'){c.style.display='block';
+                           javascript:(function() {
+var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+link.type = 'image/x-icon';link.rel = 'shortcut icon';
+link.href = 'https://www.google.com/docs/about/favicon.ico';
+document.title = ' Google Docs: Free Online Documents for Personal Use';
+console.log(document.title);
+document.getElementsByTagName('head')[0].appendChild(link);})();
+                           } else
+{c.style.display='none';
+javascript:(function() {
+var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+link.type = 'image/x-icon';link.rel = 'shortcut icon';
+link.href = 'hi';
+document.title = 'Light Net';
+console.log(document.title);
+document.getElementsByTagName('head')[0].appendChild(link);})();
+}
 }})
   </script>
 <div class="navbar">
