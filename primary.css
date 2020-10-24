@@ -111,6 +111,20 @@ font-size: 1.5vw;
 color: white;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+  .proxyheader
+{
+padding-top: 15%;
+font-size: 3.1vw;
+color: white;
+text-decoration: underline;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+  .proxycontent
+{
+font-size: 1.5vw;
+color: white;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
   .gameheader
   {
    position: relative;
@@ -341,6 +355,20 @@ text-decoration: underline;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .indexcontent
+{
+font-size: 4.5vw;
+color: white;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+  .proxyheader
+{
+padding-top: 15%;
+font-size: 8.1vw;
+color: white;
+text-decoration: underline;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+  .proxycontent
 {
 font-size: 4.5vw;
 color: white;
