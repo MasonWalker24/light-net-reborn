@@ -3,6 +3,7 @@ body
 overflow: hidden;
 background-color: black;
 background-image: url("background12.jpg");
+  background-repeat: none;
 }
 @media only screen and (min-width: 1000px) {
   body
@@ -10,6 +11,7 @@ background-image: url("background12.jpg");
 overflow: hidden;
 background-color: black;
 background-image: url("background12.jpg");
+  background-repeat: none;
 }
 .navbar
 {
